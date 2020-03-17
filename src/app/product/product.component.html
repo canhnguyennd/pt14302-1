@@ -1,14 +1,15 @@
 <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+              <a href="#"><img class="card-img-top" [src]="product.img" alt=""></a>
               <div class="card-body">
                 <h4 class="card-title">
-                  <a href="#">{{polylills.name}}</a>
+                  <a href="#">{{product.name}}</a>
                 </h4>
-                <h5>{{polylills.price}}</h5>
-                <p class="card-text">{{polylills.desc}}</p>
-                <p class="card-text">{{polylills.status ? 'Con hang' : 'Het hang'}}</p>
+                <h5>{{product.price}}</h5>
+                <p class="card-text">{{product.desc}}</p>
+                <p class="card-text">{{product.status ? 'Con hang' : 'Het hang'}}</p>
               </div>
               <div class="card-footer">
-                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                
+                <button class="btn btn-primary" (click)="changeStatus($event)">Click</button>
               </div>
             </div>

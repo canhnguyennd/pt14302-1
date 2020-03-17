@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {polylills} from '../polyfills'
+import {Product} from '../Product';
 
 @Component({
   selector: 'app-product',
@@ -11,11 +11,17 @@ export class ProductComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {}
-    polylills: polylills = {
-    name: "Item 1",
-    price: 24.99,
+    product : Product={
+      name: "Item 1",
+    price: 24.999,
     desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.",
-    status: false,
-  };
+    status: true,
+    img:"http://placehold.it/700x400"
+    }
+    changeStatus(){
+      // console.log('1');
+      this.product.status=false;
+    }
+  
 
 }
