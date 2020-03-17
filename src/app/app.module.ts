@@ -8,6 +8,7 @@ import { ProductComponent } from './product/product.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { SlideComponent } from './slide/slide.component';
 import { CategoryComponent } from './category/category.component';
+// import {FormsModule} from '@angular/forms';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],

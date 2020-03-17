@@ -10,6 +10,11 @@
               </div>
               <div class="card-footer">
                 
-                <button class="btn btn-primary" (click)="changeStatus($event)">Click</button>
+                <button class="btn btn-primary" (click)="changeStatus()">Click</button>
+                <input type="text" (keyup)="changeTitle($event)">
+                <form action="">
+                  <input type="text" [(ngModel)]="product.name" name="product-name">
+                  <input type="text" [(ngModel)]="product.desc" name="product-desc">
+                </form>
               </div>
             </div>

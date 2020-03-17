@@ -22,6 +22,9 @@ export class ProductComponent implements OnInit {
       // console.log('1');
       this.product.status=false;
     }
-  
+    changeTitle(e){
+      // console.log(e.target.value);
+      this.product.name=e.target.value;
+    }
 
 }
